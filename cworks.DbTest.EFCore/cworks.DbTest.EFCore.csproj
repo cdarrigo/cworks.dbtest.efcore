@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyVersion>1.2020.0212.0</AssemblyVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageVersion>1.2020.0212.0</PackageVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <FileVersion>1.2020.0212.0</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.2020.0212.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="BumpAssemblyVersions" Version="1.4.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="cworks.DbTest" Version="1.2020.212.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BumpVersionSpec Include="Version" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+    <BumpVersionSpec Include="FileVersion" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+    <BumpVersionSpec Include="PackageVersion" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+    <BumpVersionSpec Include="AssemblyVersion" DefaultVersion="1.0.0.0" CreateNew="true" UseUtc="true" MayReset="true" MinorProviderTemplate="YearVersion" PatchProviderTemplate="MonthDayOfMonthMultipartVersionProvider" BuildProviderTemplate="Increment" />
+  </ItemGroup>
+</Project>
