@@ -1,22 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyVersion>1.2020.0212.0</AssemblyVersion>
+    <AssemblyVersion>1.2020.0213.0</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <PackageVersion>1.2020.0212.0</PackageVersion>
+    <PackageVersion>1.2020.0213.0</PackageVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <FileVersion>1.2020.0212.0</FileVersion>
+    <FileVersion>1.2020.0213.0</FileVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <Version>1.2020.0212.0</Version>
+    <Version>1.2020.0213.0</Version>
   </PropertyGroup>
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <OutputType>Library</OutputType>
   </PropertyGroup>
-  
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <Authors>Chris Darrigo</Authors>
+    <Company />
+    <RepositoryUrl>https://github.com/cdarrigo/cworks.dbtest.efcore</RepositoryUrl>
+    <AssemblyName>cworks.DbTest.EFCore</AssemblyName>
+    <RootNamespace>cworks.DbTest.EFore</RootNamespace>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="BumpAssemblyVersions" Version="1.4.0">
       <PrivateAssets>all</PrivateAssets>
